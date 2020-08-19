@@ -16,8 +16,7 @@ RUN sed -i 's/systemctl status ${PG_SERVICE}/service ${PG_SERVICE} status/g' /us
 
 COPY . .
 
-RUN cd Sn1per-8.3 \
-    && ./install.sh \
-    && sniper -u force
+RUN cd Sn1per-8.6 \
+    && ./install.sh
 
 CMD ["bash"]

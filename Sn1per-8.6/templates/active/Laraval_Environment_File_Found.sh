@@ -1,0 +1,9 @@
+AUTHOR='@xer0dayz'
+VULN_NAME='Laraval Environment File Found'
+URI='/.env'
+METHOD='GET'
+MATCH="APP_NAME"
+SEVERITY='P3 - MEDIUM'
+CURL_OPTS="--user-agent '' -s -L --insecure"
+SECONDARY_COMMANDS=''
+GREP_OPTIONS='-i'
